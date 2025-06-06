@@ -12,7 +12,7 @@ const ProjectsPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await AxiosInstance.get('/projects');
+        const response = await AxiosInstance.get('/projects/');
         const projects = response.data;
         setProjects(projects);
         const fundedProjects = projects.filter(project => parseFloat(project.current_funding) > 0).length;
