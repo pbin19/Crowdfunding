@@ -14,6 +14,7 @@ from pathlib import Path
 import os 
 from environ import Env 
 
+ALLOWED_HOSTS = ['crowdfunding-itwg.onrender.com', 'localhost', '127.0.0.1']
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dev-key-fallback') 
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
