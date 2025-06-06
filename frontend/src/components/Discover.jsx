@@ -9,7 +9,7 @@ const Discover = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await AxiosInstance.get('/projects');
+        const response = await AxiosInstance.get('/projects/');
         setProjects(response.data);
       } catch (error) {
         console.error('Error fetching projects:', error);
