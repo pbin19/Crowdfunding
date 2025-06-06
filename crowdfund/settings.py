@@ -14,6 +14,8 @@ from pathlib import Path
 import os 
 from environ import Env 
 
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dev-key-fallback') 
+
 env = Env()
 Env.read_env()
 ENVIRONMENT = env('ENVIRONMENT', default='production')
