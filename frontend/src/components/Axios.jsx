@@ -1,19 +1,14 @@
-import axios from 'axios' 
+import axios from 'axios';
 
-const baseUrl = 'http://127.0.0.1:8000/api'
+const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000/api';
 
 const AxiosInstance = axios.create({
-
-    baseURL: baseUrl, 
-    timeout: 5000, 
+    baseURL: baseUrl,
+    timeout: 5000,
     headers: {
-        "Content-type":"application/json",
-        accept: "application/json"
-    }
+        'Content-Type': 'application/json',
+        accept: 'application/json',
+    },
+});
 
-
-})
-
-export default AxiosInstance
-
-
+export default AxiosInstance;
