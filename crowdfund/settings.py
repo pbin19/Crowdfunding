@@ -15,6 +15,7 @@ import os
 from environ import Env 
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dev-key-fallback') 
+DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 env = Env()
 Env.read_env()
