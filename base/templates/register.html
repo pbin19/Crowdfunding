@@ -1,0 +1,14 @@
+{% extends 'base_generic.html' %}
+
+
+{% load static %}
+
+{% block content %}
+<div class="registration-container"> 
+    <form method="post" class="registration-form"> 
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="register-btn">Register</button> 
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+  background-color: white;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  gap: 1em;
+}
+
+.nav-title {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.nav-link--1,
+.nav-link--2 {
+  text-decoration: none;
+  color: black;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-heading {
+  font-size: 24px;
+  color: #333;
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #267bb5;
+}
+
+.register-link {
+  margin-top: 15px;
+  color: #555;
+}
+
+.register-link a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.add-project-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.add-project-heading {
+  font-size: 24px;
+  color: #333;
+}
+
+.add-project-form {
+  margin-top: 20px;
+}
+
+.add-project-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.add-project-form input,
+.add-project-form textarea,
+.add-project-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.add-project-form textarea {
+  resize: vertical;
+}
+
+.add-project-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-project-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for project cards */
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.project-funding {
+  font-size: 14px;
+  color: #666;
+}
+
+.no-project {
+  font-size: 14px;
+  color: #999;
+}
+
+/* Styles for recommended projects */
+.recommended-projects {
+  margin-top: 40px;
+}
+
+.title-img {
+  margin-left: 200px;
+  width: 370px;
+  height: 30px;
+}
+
+.btn-outline-success {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.registration-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form p {
+  margin: 20px 0;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="password"],
+.registration-form input[type="email"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.register-btn {
+  /* Unique class for button */
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make the button full width */
+}
+
+.register-btn:hover {
+  background-color: #4cae4c;
+}
+
+/* Specific error message styling within form */
+.registration-form .errorlist {
+  color: red;
+  font-size: 0.9em;
+}
+
+.companies-header {
+  text-align: center;
+  margin-block: 30px;
+  color: var(--primary-text-color);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.header-left {
+  max-width: 40vw;
+}
+.get-started-btn {
+  margin-top: 20px;
+  text-decoration:none;
+  display: inline-block;
+}
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+  text-align: center;
+}
+.header-right img {
+  width: 600px;
+  border-radius: 10px;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+.hero-container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+} 

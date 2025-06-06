@@ -1,0 +1,62 @@
+
+.navbar-custom .nav-link, .navbar-custom .navbar-brand {
+  color: #ffffff !important; /* Ensuring it overrides Bootstrap or other styles */
+}
+
+/* Hover and focus styles for nav links */
+.navbar-custom .nav-link:hover, .navbar-custom .nav-link:focus {
+  color: #cccccc; /* Light grey for a subtle hover effect */
+}
+
+/* Button styles within the navbar */
+
+
+.navbar-custom .form-inline {
+  flex-grow: 1; /* Allows the form to grow and use available space */
+  margin-right: 1rem; /* Right margin remains */
+  margin-left: 1rem; /* Left margin adjustment */
+}
+
+/* Expanding the search input within the form */
+.navbar-custom .form-inline .form-control {
+  max-width: 300px; /* Maximum width for the search bar */
+  width: 100%; /* Allows width to be responsive within the max-width limit */
+}
+
+.navbar-custom .profile-link {
+  margin-right: 10px; /* existing margin */
+  margin-left: 10px; /* add space to the left of the profile link */
+}
+
+
+
+.navbar-custom .dropdown-menu {
+  position: absolute;
+  top: 100%; /* Directly below the form field */
+  left: 0;
+  right: 0;
+  max-height: 300px; /* Maximum height before scrolling */
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+  z-index: 1000; /* Ensures dropdown is above other content */
+}
+
+/* Styles for individual dropdown items */
+.navbar-custom .dropdown-item {
+  text-align: left; /* Align text to the left */
+  padding: 8px 20px; /* Adequate padding for touch targets */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 992px) {
+  .navbar-custom .nav-link, .navbar-custom .profile-link {
+    margin-right: 0.5rem; /* Right margin on smaller screens */
+    margin-bottom: 0.5rem; /* Bottom margin for better spacing */
+  }
+}
+
+
+.logout-btn, .login-btn {
+  color: white;
+  padding: 2px 20px;
+}
